@@ -10,3 +10,7 @@ for (let i = 0; i < 225; i++) {
     const cell = document.createElement("div");
     board.appendChild(cell);
 }
+function rollDice() {
+    let dice = Math.floor(Math.random() * 6) + 1;
+    document.getElementById("dice-result").innerHTML = <img src="dice${dice}.png" width="50">;
+}
