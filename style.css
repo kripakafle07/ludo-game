@@ -22,7 +22,42 @@ h1 {
 #ludo-board div {
     border: 1px solid #ccc;
 }
+ #ludo-board div:nth-child(-n+15),
+#ludo-board div:nth-child(n+211) {
+    background-color: #ffcccc; /* Red zone */
+}
 
+#ludo-board div:nth-child(106),
+#ludo-board div:nth-child(120) {
+    background-color: #ccffcc; /* Green zone */
+}
+#ludo-board {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    background: linear-gradient(#fff, #eee);
+}
+.token {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+/* Color zones for Ludo */
+#ludo-board div:nth-child(-n+15),
+#ludo-board div:nth-child(n+211) {
+    background-color: #ffcccc; /* Red zone */
+}
+
+#ludo-board div:nth-child(106),
+#ludo-board div:nth-child(120) {
+    background-color: #ccffcc; /* Green zone */
+}
+
+/* Optional 3D effect */
+#ludo-board {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    background: linear-gradient(#fff, #eee);
+}
 .dice-container {
     margin-top: 20px;
 }
