@@ -71,3 +71,19 @@ button {
     font-size: 24px;
     margin-top: 10px;
 }
+/* Color zones for Ludo */
+#ludo-board div:nth-child(-n+15),
+#ludo-board div:nth-child(n+211) {
+    background-color: #ffcccc; /* Red zone */
+}
+
+#ludo-board div:nth-child(106),
+#ludo-board div:nth-child(120) {
+    background-color: #ccffcc; /* Green zone */
+}
+
+/* Optional 3D effect */
+#ludo-board {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    background: linear-gradient(#fff, #eee);
+}
